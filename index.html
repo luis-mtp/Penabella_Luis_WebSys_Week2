@@ -3,40 +3,40 @@
     <head>
         <title>Penabella: Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="index.css">
     </head>
 
-    <body style="background-image: url('assets/myBG.png'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; margin-left: 70px; margin-right: 70px;">
-        <table border="0" width="100%" cellpadding="10">
-            <tr>
-                <td align="left">
-                    <strong style="color: white; font-size: 25px; font-family: 'Courier New', Courier, monospace;">Penabella.</strong>
-                </td>
-                <td align="right">
-                    <a href="index.html" style="font-size: 18px; color: rgb(72, 133, 255); font-family: Arial;">Home</a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="aboutPage.html" style="font-size: 17px; color: white; font-family: Arial;">About</a>
-                </td>
-            </tr>
-        </table>
+    <body style="background-image: url('assets/myBG.png'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+        <div class="navbar">
+            <a href="index.html" class="nav-logo">Luis <span class="last-name">Penabella</span></a>
+ 
+            <div class="nav-direct">
+                <a href="index.html" class="active">Home</a>
+                <a href="aboutPage.html">About</a>
+            </div>
+        </div>
 
-        <h1 style="margin-top: 120px;margin-bottom: 3px ;margin-left: 10px; color: rgb(210, 210, 210); font-family:Arial, Helvetica, sans-serif;">Hi, I'm Luis Martin T. Penabella</h1>
-        <h2 style="margin-top: 3px; margin-left: 10px;color: rgb(72, 133, 255); font-family: Arial, Helvetica, sans-serif; font-size: 20px;">BSIT-MWA, 2nd Year Student</h2>
+        <div class="home-page">
+            <div class="infos">
+                <h1>LUIS</h1>
+                <h2>PENABELLA</h2>
 
-        <p style="margin-left: 10px; color: rgb(210, 210, 210); font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 1.5;">
-            I am a student in National University taking up a course of Information Technology<br>specializing in Mobile and Web Application. Throughout my journey, I've learned foundational<br>skills within this field and is motivated to learn more. I am dedicated in excelling in this<br>course to provide myself a sustainable and comfortable future.
-        </p>
+                <div class="sub-heading">
+                    <hr>
+                    <h3>IT STUDENT</h3>
+                    <p>Student in National University-Manila, taking up Bachelor<br>of Science in Information Technology specializing<br>in Mobile and Web Application.</p>
+                </div>
 
-        <a href="aboutPage.html" style="margin-left: 10px; color: rgb(46, 97, 199); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 20px;">About Me</a>
-        
-        <br>
+                <button onclick="window.location.href='aboutPage.html';" class="about-me-btn">About Me</button>
+            </div>
 
-        <table align="left" hspace="10" border="0" cellspacing="10" style="margin-top: 120px;">
-            <tr>
-                <td><a href="https://www.facebook.com/cookietrashh" target="_blank"><img src="assets/icons/fbIcon.png" alt="Facebook" width="30"></a></td>
-                <td><a href="https://github.com/luis-mtp"  target="_blank"><img src="assets/icons/gitIcon.png" alt="GitHub" width="30"></a></td>
-                <td><a href="https://www.linkedin.com/in/luis-penabella-lmtp18"  target="_blank"><img src="assets/icons/inIcon.png" alt="LinkedIn" width="30"></a></td>
-            </tr>
-        </table>
-        
+            <div class="icons">
+                <div class="icon-background"><a href="https://www.facebook.com/cookietrashh" target="_blank"><img src="assets/icons/fbIcon.png" alt="Facebook" width="30"></a></div>
+                <div class="icon-background"><a href="https://github.com/luis-mtp"  target="_blank"><img src="assets/icons/gitIcon.png" alt="GitHub" width="30"></a></div>
+                <div class="icon-background"><a href="https://www.linkedin.com/in/luis-penabella-lmtp18"  target="_blank"><img src="assets/icons/inIcon.png" alt="LinkedIn" width="30"></a></div>
+                <div class="vertical-line"></div>
+            </div>
+        </div>
     </body>
 </html>

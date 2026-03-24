@@ -2,72 +2,160 @@
 <html>
     <head>
         <title>Penabella: About Me</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="aboutPage.css">
     </head>
 
-    <body style="background-image: url('assets/plainBG.png'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; margin-left: 70px; margin-right: 70px;">
-        <table border="0" width="100%" cellpadding="10">
-            <tr>
-                <td align="left">
-                    <strong style="color: white; font-size: 25px; font-family: 'Courier New', Courier, monospace;">Penabella.</strong>
-                </td>
-                <td align="right">
-                    <a href="index.html" style="font-size: 17px; color: white; font-family: Arial;">Home</a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="aboutPage.html" style="font-size: 18px; color: rgb(72, 133, 255); font-family: Arial;">About</a>
-                </td>
-            </tr>
-        </table>
+    <body style="background-image: url('assets/myBG.png'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+        <div class="navbar">
+            <a href="index.html" class="nav-logo">Luis <span class="last-name">Penabella</span></a>
+ 
+            <div class="nav-direct">
+                <a href="index.html">Home</a>
+                <a href="aboutPage.html" class="active">About</a>
+            </div>
+        </div>
 
-        <table border="0" width="60%" cellpadding="10" align="center" style="margin-top: 10px;">
-            <tr>
-                <td align="middle">
-                    <img src="assets/icons/myPhoto.png" alt="Luis Martin T. Penabella" width="200">
-                </td>
-                <td align="left">
-                    <p style="margin-bottom: 10px; color: rgb(72, 133, 255); font-family: Arial, Helvetica, sans-serif; font-size: 12px;">About Me</p>
-                    <h1 style="margin-top: 10px; margin-bottom: 20px; color: rgb(210, 210, 210); font-family:Arial, Helvetica, sans-serif;">Penabella, Luis<br>Martin Tagumpay</h1>
-                    <h2 style="margin-top: 20px; color: rgb(162, 162, 162); font-family:Arial, Helvetica, sans-serif; font-size: 12px; font-style: italic;">I'm Luis, a 2nd year BSIT-MWA student at National University.</h2>
+        <div class="about-page">
+            <div class="my-photo">
+                <img src="assets/icons/myImageBackground.png" alt="Background" class="image-background">
+                <img src="assets/icons/myImage.png" alt="Luis Martin T. Penabella" class="my-image">
+            </div>
 
-                    <table align="left" border="0" cellspacing="10" padding="0" style="margin-left: -12px;">
-                        <tr>
-                            <td><a href="https://www.facebook.com/cookietrashh" target="_blank"><img src="assets/icons/fbIcon.png" alt="Facebook" width="25"></a></td>
-                            <td><a href="https://github.com/luis-mtp"  target="_blank"><img src="assets/icons/gitIcon.png" alt="GitHub" width="25"></a></td>
-                            <td><a href="https://www.linkedin.com/in/luis-penabella-lmtp18"  target="_blank"><img src="assets/icons/inIcon.png" alt="LinkedIn" width="25"></a></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    
-        <table border="0" cellpadding="10" cellspacing="0" align="center" style="margin-bottom: 30px">
-            <tr>
-                <td valign="top" width="49.25%" >
-                    <h4 style="margin-left: 25px; color: rgb(210, 210, 210); font-family: Arial, Helvetica, sans-serif; font-size: 30px;">Hobbies</h4>
-                    <ul style="margin-top: -30px; color: rgb(72, 133, 255); font-family:Arial, Helvetica, sans-serif; font-size: 20px;">
-                        <li>Physical Activities</li>
-                        <li>Watching Movies</li>
-                        <li>Playing Games</li>
-                    </ul>
-                </td>
+            <div class="introduction">
+                <h3>Hi, I'm</h3>
+                <h1>Luis <span class="last-name">Penabella</span></h1>
+                <h2>Sophomore IT Student</h2>
+                <p>I'm <strong>Luis Martin T. Penabella</strong>, a <strong>20-year-old sophomore IT Student in<br>National University-Manila</strong> with strong foundation in <strong>designs, system<br>planning, and programming</strong>. I'm dedicated in improving my skills for<br>my future profession driven by pure enjoyment of building efficient<br>technology and achieving a successful, high-impact career.</p>
 
-                <td width="0.5%" bgcolor="#4885ff" style="padding: 0;"></td>
+                <div class="icons">
+                    <hr>
+                    <div class="icon-background"><a href="https://www.facebook.com/cookietrashh" target="_blank"><img src="assets/icons/fbIcon.png" alt="Facebook" width="30"></a></div>
+                    <div class="icon-background"><a href="https://github.com/luis-mtp"  target="_blank"><img src="assets/icons/gitIcon.png" alt="GitHub" width="30"></a></div>
+                    <div class="icon-background"><a href="https://www.linkedin.com/in/luis-penabella-lmtp18"  target="_blank"><img src="assets/icons/inIcon.png" alt="LinkedIn" width="30"></a></div>
+                </div>
+            </div>
+        </div>
 
-                <td valign="top" width="49.25%">
-                    <h4 style="margin-left: 20px; color: rgb(210, 210, 210); font-family: Arial, Helvetica, sans-serif; font-size: 30px;">Favorite Websites</h4>
-                    <ol style="margin-top: -30px; color: rgb(72, 133, 255); font-family:Arial, Helvetica, sans-serif; font-size: 20px;">
-                        <li><a href="https://www.instagram.com/?hl=en" target="_blank" style="color: rgb(72, 133, 255)">Instagram</a></li>
-                        <li><a href="https://www.netflix.com/ph-en/" target="_blank" style="color: rgb(72, 133, 255)">Netflix</a></li>
-                        <li><a href="https://chatgpt.com" target="_blank" style="color: rgb(72, 133, 255)">ChatGPT</a></li>
-                    </ol>
-                </td>
-            </tr>
-        </table>
+        <div class="hobbies">
+            <div class="hobbies-header">
+                <div class="sub-header">
+                    <hr>
+                    <h3>Hobbies</h3>
+                </div>
+                <h2>Life & <span class="header-second-word">Interest</span></h2>
+            </div>
 
-        <hr>
-        
-        <footer align="center" style="margin-top: 20px;">
-            <p style="color: rgb(199, 197, 80); font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 15px;">"You will never be perfect, you can only be excellent."</p>
+            <ul class="hobbies-list">
+                <li>
+                    <div class="hobby-card">
+                        <h2>Physical Activities</h2>
+                        <p>Staying active to maintain a sharp mind, healthy body, and disciplined focused for myself and my future.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="hobby-card">
+                        <h2>Watching Movies</h2>
+                        <p>Exploring different narratives through anime, physiological thrillers, sci-fi, action, romance, and motivational films.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="hobby-card">
+                        <h2>Playing Games</h2>
+                        <p>Passing time through gaming during my free time to unwind and temporarily disconnect to my routine.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="websites">
+            <div class="websites-header">
+                <div class="sub-header">
+                    <hr>
+                    <h3>Favorites</h3>
+                </div>
+                <h2>Websites <span class="header-second-word">I Visit</span></h2>
+            </div>
+
+            <ol class="websites-list">
+                <li>
+                    <a href="https://www.instagram.com" target="_blank" class="website-card">
+                        <div class="website-preview">
+                            <img src="assets/previews/instagramPreview.png" alt="Instagram Preview">
+                        </div>
+                        <div class="website-info">
+                            <span class="site-number"></span>
+                            <h2>Instagram</h2>
+                            <p>Scrolling through reels and staying connected with friends through stories, posts, and direct messages.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.netflix.com" target="_blank" class="website-card">
+                        <div class="website-preview">
+                            <img src="assets/previews/netflixPreview.png" alt="Netflix Preview">
+                        </div>
+                        <div class="website-info">
+                            <span class="site-number"></span>
+                            <h2>Netflix</h2>
+                            <p>Binge-watching my favorite movies abd series in high quality, making the most of our monthly subscription.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://gemini.google.com" target="_blank" class="website-card">
+                        <div class="website-preview">
+                            <img src="assets/previews/geminiPreview.png" alt="Gemini Preview">
+                        </div>
+                        <div class="website-info">
+                            <span class="site-number"></span>
+                            <h2>Gemini</h2>
+                            <p>Using cutting-edge AI to brainstorm ideas, debug code, and explore new concepts for my school works and projects.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.roblox.com" target="_blank" class="website-card">
+                        <div class="website-preview">
+                            <img src="assets/previews/robloxPreview.png" alt="Roblox Preview">
+                        </div>
+                        <div class="website-info">
+                            <span class="site-number"></span>
+                            <h2>Roblox</h2>
+                            <p>Playing with my niece to pass time and unwinding with friends in various games to relax and have fun.</p>
+                        </div>
+                    </a>
+                </li>
+            </ol>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-section">
+                <div class="quote">
+                    <p>"We cannot be perfect, but we can be excellent."</p>
+                    <span class="quote-author">- Vince Lombardi</span>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-info">
+                
+                <div class="footer-nav">
+                    <a href="index.html" class="nav-logo">Luis <span class="last-name">Penabella</span></a>
+                </div>
+
+                <div class="footer-contact">
+                    <div class="icon-background"><a href="https://www.facebook.com/cookietrashh" target="_blank"><img src="assets/icons/fbIcon.png" alt="Facebook" width="30"></a></div>
+                    <div class="icon-background"><a href="https://github.com/luis-mtp"  target="_blank"><img src="assets/icons/gitIcon.png" alt="GitHub" width="30"></a></div>
+                    <div class="icon-background"><a href="https://www.linkedin.com/in/luis-penabella-lmtp18"  target="_blank"><img src="assets/icons/inIcon.png" alt="LinkedIn" width="30"></a></div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <p>&copy; 2024 Luis Penabella. All rights reserved. | <span class="footer-tag">Assited by Gemini</span></p>
+            </div>
         </footer>
-
     </body>
 </html>
