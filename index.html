@@ -7,36 +7,47 @@
         <link rel="stylesheet" href="index.css">
     </head>
 
-    <body style="background-image: url('assets/myBG.png'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
-        <div class="navbar">
-            <a href="index.html" class="nav-logo">Luis <span class="last-name">Penabella</span></a>
- 
-            <div class="nav-direct">
-                <a href="index.html" class="active">Home</a>
-                <a href="aboutPage.html">About</a>
+    <body>
+        <nav class="navbar"> <!-- Navigation Bar -->
+            <div class="nav-container">
+                <a href="index.html" class="nav-title">Luis <span class="last-name">Penabella</span></a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="aboutPage.html">About</a></li>
+                </ul>
             </div>
-        </div>
+        </nav>
 
-        <div class="home-page">
-            <div class="infos">
-                <h1>LUIS</h1>
-                <h2>PENABELLA</h2>
+        <div class="content"> <!-- Background Video -->
+            <video autoplay muted loop playsinline class="bg-video">
+                <source src="assets/bgVideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
 
-                <div class="sub-heading">
-                    <hr>
-                    <h3>IT STUDENT</h3>
-                    <p>Student in National University-Manila, taking up Bachelor<br>of Science in Information Technology specializing<br>in Mobile and Web Application.</p>
+            <div class="home-page">
+                <div class="infos">
+                    <h1>LUIS</h1>
+                    <h2>PENABELLA</h2>
+
+                    <div class="sub-heading">
+                        <hr>
+                        <h3>IT STUDENT</h3>
+                        <p>Student in National University-Manila, taking up Bachelor<br>of Science in Information Technology specializing<br>in Mobile and Web Application.</p>
+                    </div>
+
+                    <button onclick="window.location.href='aboutPage.html';" class="about-me-btn">About Me</button>
                 </div>
-
-                <button onclick="window.location.href='aboutPage.html';" class="about-me-btn">About Me</button>
-            </div>
-
-            <div class="icons">
-                <div class="icon-background"><a href="https://www.facebook.com/cookietrashh" target="_blank"><img src="assets/icons/fbIcon.png" alt="Facebook" width="30"></a></div>
-                <div class="icon-background"><a href="https://github.com/luis-mtp"  target="_blank"><img src="assets/icons/gitIcon.png" alt="GitHub" width="30"></a></div>
-                <div class="icon-background"><a href="https://www.linkedin.com/in/luis-penabella-lmtp18"  target="_blank"><img src="assets/icons/inIcon.png" alt="LinkedIn" width="30"></a></div>
-                <div class="vertical-line"></div>
+                
+                <div class="icons">
+                    <div class="icon-background"><a href="https://www.facebook.com/cookietrashh" target="_blank"><img src="assets/icons/fbIcon.png" alt="Facebook" width="30"></a></div>
+                    <div class="icon-background"><a href="https://github.com/luis-mtp"  target="_blank"><img src="assets/icons/gitIcon.png" alt="GitHub" width="30"></a></div>
+                    <div class="icon-background"><a href="https://www.linkedin.com/in/luis-penabella-lmtp18"  target="_blank"><img src="assets/icons/inIcon.png" alt="LinkedIn" width="30"></a></div>
+                    <div class="vertical-line"></div>
+                </div>
             </div>
         </div>
+        
     </body>
+
 </html>

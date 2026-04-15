@@ -1,75 +1,121 @@
+* {
+    box-sizing: border-box;
+}
 body {
+    margin: 0;
+}
+
+/* Background Video Styles */
+.content {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0 20px;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
+/* Navigation Bar Styles */
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    z-index: 1000;
+    background-color: rgba(59, 70, 118, 0.571);
+    backdrop-filter: blur(10px);
+    
+    display: block; 
+}
+.nav-container {
+    max-width: 1200px; 
+    margin: 0 auto;
+    height: 100%;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    z-index: 10;
-
-    width: 100%;
-    max-width: 1050px;
-    margin: 10px auto;
-    padding: 10px;
-    flex-shrink: 0;
+    padding: 0 120px;
 }
-.nav-logo {
+.nav-title {
     text-decoration: none;
     font-weight: bold;
     color: #FFFFFF;
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    flex-shrink: 0;
     transition: 0.3s;
 }
 .last-name {
     color: #00F0FF;
     transition: 0.3s;
 }
-.nav-logo:hover .last-name{
+.nav-title:hover .last-name{
     color: #FFFFFF;
 }
-.nav-direct a {
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-size: 18px;
+}
+.nav-links a {
     text-decoration: none;
+    font-weight: 600;
     color: #94A3B8;
     font-family: Arial, sans-serif;
-    margin-left: 20px;
-    font-size: 18px;
     transition: 0.3s;
 }
-.nav-direct a:hover {
+.nav-links a:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
     color: #FFFFFF;
 }
-.nav-direct a.active {
-    font-weight: bold;
+.nav-links a.active {
     color: #0077FF;
 }
+.nav-links a.active:hover {
+    color: #00F0FF;
+}
 
+/* Home Page Styles */
+.content .home-page {
+    width: 100%;
+    height: calc(100vh - 10%);
+
+    padding: 0 120px;
+} 
 .home-page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-grow: 1;
-    
-    width: 100%;
-    max-width: 1050px;
-    margin: 0px auto;
-    padding: 10px;
-}
-
+} 
+/* Left Side Content */
 .infos h1 {
     font-weight: bold;
     color: #FFFFFF;
     font-size: 100px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 0.7;
+    cursor: default;
 }
 .infos h2 {
     font-weight: bold;
@@ -82,12 +128,15 @@ body {
 }
 .infos h2:hover {
     color: #FFFFFF;
+    cursor: default;
 }
 
 .sub-heading {
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: default;
+
     margin-top: -80px;
 }
 .sub-heading hr {
@@ -95,6 +144,7 @@ body {
     height: 1px;
     background-color: #00F0FF;
     border: none;
+
     margin: 0;
     margin-left: 10px;
 }
@@ -103,6 +153,7 @@ body {
     color: #FFFFFF;
     font-size: 21px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     margin-left: 10px;
 }
 .sub-heading p {
@@ -110,20 +161,23 @@ body {
     color: #94A3B8;
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     margin-left: 50px;
 }
-
 .about-me-btn {
     background-color: #FFFFFF;
     color:#0077FF;
     border: 2px solid #0077FF;
     padding: 10px 25px;
-    margin-top: 20px;
-    margin-bottom: 80px;
+
     font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
     border-radius: 40px;
+    
+    margin-top: 20px;
+    margin-bottom: 80px;
+
     transition: 0.3s;
 }
 .about-me-btn:hover {
@@ -131,7 +185,7 @@ body {
     color: #FFFFFF;
     transform: scale(0.95); 
 }
-
+/* Right Side Content */
 .icons {
     display: flex;
     flex-direction: column;
@@ -143,6 +197,7 @@ body {
     width: 1px;
     height: 70px;
     background-color: #94A3B8;
+
     margin-top: 5px;
 }
 .icon-background {
@@ -151,6 +206,7 @@ body {
     padding: 2px;
     background-color: transparent;
     border-radius: 50%;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,7 +221,6 @@ body {
 .icon-background:hover {
     background-color: #0077FF;
 }
-
 .icon-background:hover img {
     filter: brightness(0) invert(1);
     transform: scale(1.15);
